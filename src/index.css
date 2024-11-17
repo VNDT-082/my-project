@@ -15,3 +15,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.input_form_element{
+  @apply text-2xl outline-none rounded-md px-2 py-1 my-2 z-0 absolute w-11/12
+}
+.input_form_label{
+  @apply  transition-transform duration-300 z-20 absolute px-2 ease-in-out w-11/12
+}
+
