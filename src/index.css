@@ -17,7 +17,14 @@ code {
 }
 
 .input_form_element{
-  @apply text-2xl outline-none rounded-md px-2 py-1 my-2 z-0 absolute w-11/12
+  @apply text-lg outline-none rounded-md px-2 py-1 my-2 z-0 absolute w-11/12
+}
+
+.input_form_element_v2{
+  @apply text-lg outline outline-[0.5px] outline-cyan-700 rounded-md px-2 py-1 my-2 z-0 absolute w-11/12
+}
+.input_form_element_v2 .lable{
+
 }
 .input_form_label{
   @apply  transition-transform duration-300 z-20 absolute px-2 ease-in-out w-11/12
