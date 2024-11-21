@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BaseLayout from "../components/layout/BaseLayout";
+import SlideBar from "../components/SlideBar";
 
 const HomePage = () => {
     return (

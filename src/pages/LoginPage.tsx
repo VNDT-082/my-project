@@ -22,9 +22,12 @@ const LoginPage = () => {
     return (
         <>
             <div className="w-full h-full fixed bg-white flex justify-center items-center"
-                style={{ backgroundImage: "url('bg.jpg')" }}>
-                <div className="w-10/12 sm:w-8/12 md:w-8/12 lg:w-3/12 bg-blue-800 rounded-md min-w-[320px]
-                shadow-blue-950 shadow-md max-h-[360px] h-[360px] overflow-hidden relative">
+                style={{
+                    backgroundImage: "url('bg.jpg')", backgroundRepeat: "no-repeat",
+                    backgroundAttachment: 'fixed', backgroundSize: 'cover'
+                }}>
+                <div className="w-10/12 sm:w-8/12 md:w-6/12 lg:w-3/12 bg-blue-800 rounded-md min-w-[320px]
+                shadow-blue-950 shadow-md h-[400px] md:h-[360px] overflow-hidden relative">
                     <div className="w-full h-full flex justify-center px-[20px] py-[20px] absolute">
                         {isFormLogin ? <p className="text-lg font-bold text-white text-center my-2 cursor-pointer
                             hover:scale-[1.01]"
@@ -59,7 +62,7 @@ const LoginPage = () => {
                     <div className={`w-full h-full flex justify-center px-[20px] py-[20px] bg-white
                     rounded-t-md
                       shadow-sm shadow-gray-400 absolute transition-transform duration-500 z-20 ease-in-out
-                      ${isFormLogin ? 'transform -translate-y-[180px] mt-[250px] ' : 'mt-[290px]'} `}>
+                      ${isFormLogin ? 'transform -translate-y-[180px] mt-[250px] ' : 'md:mt-[280px] mt-[320px]'} `}>
                         {!isFormLogin ? <p className="text-lg font-bold text-blue-950 text-center my-2 cursor-pointer
                             hover:scale-[1.01] "  onClick={() => setIsFormLogin(true)}>Login</p> : null}
 

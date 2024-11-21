@@ -29,10 +29,10 @@ const FormControl = (props: FormControlItem) => {
                 }} />
             {labelType == 0 ?
                 <label htmlFor={`input_form_element_${id}`} id={`input_form_label_${id}`}
-                    className={`input_form_label w-full  ${labelState ? 'transform -translate-y-[22px] text-white' : 'mb-0 text-blue-950'}`}>{label}</label>
+                    className={`input_form_label w-full  ${labelState ? 'transform md:-translate-y-[22px] -translate-y-[26px] text-white' : 'mb-0 text-blue-950'}`}>{label}</label>
                 :
                 <label htmlFor={`input_form_element_${id}`} id={`input_form_label_${id}`}
-                className={`input_form_label w-full  text-blue-950 ${labelState ? 'transform -translate-y-[22px]' : 'mb-0'}`}>{label}</label>
+                    className={`input_form_label w-full  text-blue-950 ${labelState ? 'transform md:-translate-y-[22px] -translate-y-[26px]' : 'mb-0'}`}>{label}</label>
 
 
             }
